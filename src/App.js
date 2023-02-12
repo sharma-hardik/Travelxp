@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {Route,Routes} from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Service from './Service'
@@ -29,14 +29,14 @@ const App = () => {
      <>
      <ThemeProvider theme={theme}>
       <Header/>
-      <BrowserRouter>
+    
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/About' element={<About/>}></Route>
-          <Route path='/Service' element={<Service/>}></Route>
-          <Route path='/Contact' element={<Contact/>}></Route>
+          <Route path="/" element={<Home/>} />
+          <Route path="/About" element={<About/>} />
+          <Route path="/Service" element={<Service/>} />
+          <Route path="/Contact" element={<Contact/>} />
         </Routes>
-      </BrowserRouter>
+    
       </ThemeProvider>
      </>
   )

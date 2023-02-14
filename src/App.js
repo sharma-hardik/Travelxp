@@ -6,6 +6,7 @@ import Service from './Service'
 import Contact from './Contact'
 import Header from './Header'
 import { ThemeProvider } from 'styled-components'
+import { GlobalStyle } from './GlobalStyle'
 
 const App = () => {
     const theme = {
@@ -28,6 +29,7 @@ const App = () => {
   return (
      <>
      <ThemeProvider theme={theme}>
+     <GlobalStyle/>
       <Header/>
     
         <Routes>
